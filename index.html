@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imran Ahmad Auwal — Digital Imaging & 3D Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <span class="logo">IA<span class="dot">.</span></span>
+      <div class="nav-links">
+        <a href="#work-2d">2D Imaging</a>
+        <a href="#work-3d">3D Assets</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <span class="badge">Digital Imaging Specialist & Technical Engineer</span>
+      <h1>Precision Visual Asset Engineering</h1>
+      <p class="subtitle">Showcase of 2D image retouching, composite digital artwork, and 3D rendering assets optimized for AI annotation & digital workflows.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 2D Artwork Section -->
+    <section id="work-2d" class="portfolio-section">
+      <div class="section-header">
+        <h2>2D Digital Artwork & Editing</h2>
+        <p>Image segmentation, digital retouching, and vector compositions.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="card-image-wrapper">
+            <img src="assets/project1.jpg" alt="2D Image Manipulation" loading="lazy">
+            <button class="preview-btn" onclick="openModal('assets/project1.jpg', '2D Precision Retouching & Segmentation')">View Asset</button>
+          </div>
+          <div class="card-content">
+            <span class="card-tag">2D Artwork</span>
+            <h3>Precision Retouching & Segmentation</h3>
+            <p>Object isolation, layer masks, and boundary segmentation prepared for digital imaging datasets.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image-wrapper">
+            <img src="assets/project2.jpg" alt="Digital Vector Composite" loading="lazy">
+            <button class="preview-btn" onclick="openModal('assets/project2.jpg', 'Vector Layout & Color Grading')">View Asset</button>
+          </div>
+          <div class="card-content">
+            <span class="card-tag">Photo Editing</span>
+            <h3>Vector Layout & Color Grading</h3>
+            <p>Advanced color correction, contrast balance, and structured graphic composite layouts.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3D Assets Section -->
+    <section id="work-3d" class="portfolio-section">
+      <div class="section-header">
+        <h2>3D Digital Images & Renders</h2>
+        <p>Spatial modeling, texturing, lighting, and 3D digital scene rendering.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="card-image-wrapper">
+            <img src="assets/render1.jpg" alt="3D Object Model Render" loading="lazy">
+            <button class="preview-btn" onclick="openModal('assets/render1.jpg', '3D Surface & Mesh Rendering')">View Asset</button>
+          </div>
+          <div class="card-content">
+            <span class="card-tag">3D Render</span>
+            <h3>Surface & Mesh Rendering</h3>
+            <p>High-detail polygon modeling, surface texturing, and realistic light diffusion setup.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image-wrapper">
+            <img src="assets/render2.jpg" alt="3D Environment Visualization" loading="lazy">
+            <button class="preview-btn" onclick="openModal('assets/render2.jpg', 'Spatial Environment Composition')">View Asset</button>
+          </div>
+          <div class="card-content">
+            <span class="card-tag">3D Scene</span>
+            <h3>Spatial Environment Composition</h3>
+            <p>Depth-of-field spatial setup, environmental lighting, and realistic camera angle framing.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact Footer -->
+  <footer id="contact" class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Imran Ahmad Auwal. All rights reserved.</p>
+      <p class="footer-sub">Digital Imaging Specialist | Technical Engineering</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modalImage" alt="Enlarged view">
+    <div id="modalCaption" class="modal-caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
